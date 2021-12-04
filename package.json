@@ -1,12 +1,25 @@
 {
-  "name": "random-numbers",
+  "name": "@behrens/random-numbers",
   "version": "1.0.0",
   "description": "A tool to generate a certain number of random numbers in an array",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["number", "numbers", "random", "random numbers", "array of random numbers"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/behrens-de/random-numbers.git"
+  },
+  "keywords": [
+    "number",
+    "numbers",
+    "random",
+    "random numbers",
+    "array of random numbers"
+  ],
   "author": "Jan Behrens",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "latest-version": "^6.0.0"
+  }
 }

@@ -3,7 +3,7 @@
  * random-numbers
  */
 
- function randomNumbers({ quantity = 1, sort = 'asc', uniqe = true, min = 0, max = 99, detail = false }) {
+function randomNumbers({ quantity = 1, sort = 'asc', uniqe = true, min = 0, max = 99, detail = false }) {
     const selected = [];
     const notSelected = [];
     let isValid = true;
@@ -59,21 +59,4 @@
     return !isValid ? { errorCode, errorMsg } : (detail !== true) ? selected : { selected: selected, notSelected: notSelected, loops };
 }
 
-
-//
-const settings = {
-    quantity: 5,
-    sort: 'asc',
-    min: 11,
-    max: 100,
-    uniqe: true,
-    detail: false
-};
-const numbers = randomNumbers(settings);
-const numbers2 = randomNumbers(settings);
-
-console.log(numbers);
-console.log(numbers2);
-// console.log(numbers);
-// console.log(numbers2);
-// console.log(numbers2);
+module.exports = {randomNumbers}
