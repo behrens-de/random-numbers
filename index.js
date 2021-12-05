@@ -1,5 +1,5 @@
 /**
- * JP BEHRENS <hello@jpbehrens.de>
+ * JP BEHRENS <hallo@jpbehrens.de>
  * random-numbers
  */
 
@@ -59,4 +59,14 @@ function randomNumbers({ quantity = 1, sort = 'asc', uniqe = true, min = 0, max 
     return !isValid ? { errorCode, errorMsg } : (detail !== true) ? selected : { selected: selected, notSelected: notSelected, loops };
 }
 
-module.exports = {randomNumbers}
+// Example
+const settings = {
+    quantity: 5,
+    sort: 'asc',
+    min: 11,
+    max: 30,
+    uniqe: true,
+    detail: true
+};
+const numbers = randomNumbers(settings);
+console.log(numbers);
