@@ -3,7 +3,7 @@
  * random-numbers
  */
 
-function randomNumbers({ quantity = 1, sort = 'asc', uniqe = true, min = 0, max = 99, detail = false }) {
+function randomNumbers({ quantity = 1, sort = 'asc', uniqe = true, min = 0, max = 99, detail = false }={}) {
     const selected = [];
     const notSelected = [];
     let isValid = true;
@@ -69,4 +69,6 @@ const settings = {
     detail: true
 };
 const numbers = randomNumbers(settings);
+const numbers2 = randomNumbers();
 console.log(numbers);
+console.log(numbers2);
